@@ -1,0 +1,36 @@
+{
+  "name": "get-browser-language",
+  "version": "0.0.0",
+  "description": "Get browser language.",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/get-browser-language.git"
+  },
+  "keywords": [
+    "browser",
+    "language"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/get-browser-language/issues"
+  },
+  "homepage": "https://github.com/gummesson/get-browser-language",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "smokestack": "^3.3.0",
+    "tap-closer": "^1.0.0",
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "browserify test/ | tap-closer | smokestack",
+    "test:firefox": "npm test -- -b firefox"
+  }
+}
